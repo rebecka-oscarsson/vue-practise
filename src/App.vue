@@ -5,7 +5,7 @@
     <hr>
     <p>
       hej {{ post.userName }} du har klickat {{ clicked }} ggr <button @click="count">knapp</button>
-      senaste som skrev hette {{testnamn}}
+      förra gången du skrev hette du {{testnamn}}
     </p>
     <h2 v-if="clicked > 5">sluta klicka nu</h2>
     <h1 v-if="clicked > 10">men för bövelen</h1>
