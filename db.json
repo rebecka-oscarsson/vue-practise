@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Kalle Anka",
+      "date": "ett datum",
+      "comment": "snygg sida"
+    },
+    {
+      "id": 2,
+      "name": "Musse Pigg",
+      "date": "ett annat datum",
+      "comment": "du är bäst"
+    }
+  ]
+}
