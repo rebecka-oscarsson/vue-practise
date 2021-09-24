@@ -15,8 +15,7 @@
 <script>
 import Form from "./components/Form.vue";
 import Posts from "./components/Posts.vue";
-import { getData, postData } from "./components/getAndPost";
-let posts;
+import { postData } from "./components/getAndPost";
 
 export default {
   name: "App",
