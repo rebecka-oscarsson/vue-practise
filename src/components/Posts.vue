@@ -9,7 +9,7 @@ import { getData } from "./getAndPost";
 export default {
   name: "Posts",
   data() {return {posts: [], post: {}}},
-  created() {getData("http://localhost:3000/posts", (data)=>{this.posts = data})},
+  created() {getData("https://json-server-reb.herokuapp.com/posts", (data)=>{this.posts = data})},
   methods: {getPosts(e){console.log("hämtar i posts-komponent"); this.$emit("getPosts", e)}}
 };
 </script>

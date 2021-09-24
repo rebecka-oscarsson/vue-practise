@@ -18,10 +18,6 @@ import Posts from "./components/Posts.vue";
 import { getData, postData } from "./components/getAndPost";
 let posts;
 
-
-//hur ska jag göra en object-array och pusha in senaste posten? det ska nog va i savePost-funktionen
-//när sidan hämtas ska alla poster hämtas och loopas och skrivas ut
-
 export default {
   name: "App",
   data() {
@@ -40,11 +36,9 @@ export default {
     savePost(e) {
       let formData = {name: e.target.name.value, date: new Date().toLocaleString(), comment: e.target.comment.value}
       this.post = formData
-      postData("http://localhost:3000/posts", formData)
+      postData("https://json-server-reb.herokuapp.com/posts", formData)
       localStorage.setItem("name", e.target.name.value); //från Janneövning
-    },
-    getPosts(){getData("http://localhost:3000/posts", (data)=>{posts=data; console.log(posts)})}
-    
+    }
   },
 };
 </script>
